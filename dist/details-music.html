@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./style.css" rel="stylesheet" />
+    <title>Document</title>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-montserrat">
+    <header
+      class="relative bg-white px-4 py-4 container mx-auto flex items-center justify-between"
+    >
+      <!-- Logo -->
+      <a href="./index.html">
+        <img
+          src="/src/img/THRAX PUNKS_4-01 (2).jpg"
+          alt="Thrax Punks Logo"
+          class="w-40 h-auto -ml-2"
+        />
+      </a>
+      <!-- Navigation -->
+      <nav
+        class="hidden lg:flex items-center justify-between container mx-auto"
+        aria-label="Global"
+      >
+        <!-- Navigation Items -->
+        <div
+          class="hidden md:flex items-center justify-center space-x-4 container mx-auto text-base tracking-tight font-bold"
+        >
+          <a
+            href="index.html"
+            class="leading-6 text-slate-950 hover:text-pink-500 focus-within:underline underline-offset-8"
+            >Home</a
+          >
+
+          <a
+            href="news.html"
+            class="leading-6 text-slate-950 hover:text-pink-500 focus-within:underline underline-offset-8"
+            >News</a
+          >
+          <a
+            href="shows.html"
+            class="leading-6 text-slate-950 hover:text-pink-500 focus-within:underline underline-offset-8"
+            >Shows</a
+          >
+
+          <a
+            href="https://thraxpunks.bandcamp.com/merch"
+            class="leading-6 text-slate-950 hover:text-pink-500 focus-within:underline underline-offset-8"
+            >Merch</a
+          >
+          <a
+            href="music.html"
+            class="leading-6 text-slate-950 hover:text-pink-500 focus-within:underline underline-offset-8"
+            >Music</a
+          >
+
+          <a
+            href="about.html"
+            class="leading-6 text-slate-950 hover:text-pink-500 focus-within:underline underline-offset-8"
+            >About</a
+          >
+          <a
+            href="contact.html"
+            class="leading-6 text-slate-950 hover:text-pink-500 focus-within:underline underline-offset-8"
+            >Contact</a
+          >
+        </div>
+        <!-- Social -->
+        <div
+          class="hidden md:flex md:flex-1 md:justify-end space-x-2 text-sm font-semibold xl:text-sm lg:space-x-4"
+        >
+          <a
+            href="https://instagram.com"
+            class="text-slate-950 hover:text-pink-500"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://facebook.com"
+            class="text-slate-950 hover:text-pink-500"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://twitter.com"
+            class="text-slate-950 hover:text-pink-500"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            href="https://youtube.com"
+            class="text-slate-950 hover:text-pink-500"
+            ><i class="fa-brands fa-youtube"></i>
+          </a>
+          <a
+            href="https://spotify.com"
+            class="text-slate-950 hover:text-pink-500"
+            ><i class="fa-brands fa-spotify"></i
+          ></a>
+        </div>
+      </nav>
+
+      <!-- Hamburger Icon -->
+      <button id="menu-btn" class="lg:hidden burger-icon">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
+
+      <!-- Mobile menu -->
+      <div
+        id="mobile-menu"
+        class="top-14 left-0 h-[calc(100vh-3.5rem)] w-screen lg:hidden z-50"
+      >
+        <nav
+          id="menu"
+          class="bg-slate-100 h-full w-full flex flex-col justify-center"
+        >
+          <!-- Nav items -->
+          <ul
+            class="px-6 py-3 container mx-auto flex flex-col items-start justify-center space-y-4"
+          >
+            <li class="text-slate-950 text-4xl font-bold">
+              <a href="#" class="hover:text-pink-500">Home</a>
+            </li>
+
+            <li class="">
+              <a
+                href="#"
+                class="text-slate-950 text-4xl font-bold hover:text-pink-500"
+                >News</a
+              >
+            </li>
+            <li class="">
+              <a
+                href="#"
+                class="text-slate-950 text-4xl font-bold hover:text-pink-500"
+                >Shows</a
+              >
+            </li>
+            <li class="">
+              <a
+                href="#"
+                class="text-slate-950 text-4xl font-bold hover:text-pink-500"
+                >Merch</a
+              >
+            </li>
+            <li class="">
+              <a
+                href="#"
+                class="text-slate-950 text-4xl font-bold hover:text-pink-500"
+                >Music</a
+              >
+            </li>
+            <li class="">
+              <a
+                href="#"
+                class="text-slate-950 text-4xl font-bold hover:text-pink-500"
+                >About</a
+              >
+            </li>
+            <li class="">
+              <a
+                href="#"
+                class="text-slate-950 text-4xl font-bold hover:text-pink-500"
+                >Contact</a
+              >
+            </li>
+          </ul>
+
+          <!-- Social -->
+          <div class="px-6 pt-10 container mx-auto">
+            <div
+              class="flex justify-start text-md font-bold pb-1 text-pink-400"
+            >
+              Follow us:
+            </div>
+            <div
+              class="flex flex-row items-center justify-start text-2xl space-x-6"
+            >
+              <a
+                href="https://instagram.com"
+                class="text-slate-950 hover:text-pink-500"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://facebook.com"
+                class="text-slate-950 hover:text-pink-500"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://twitter.com"
+                class="text-slate-950 hover:text-pink-500"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="https://youtube.com"
+                class="text-slate-950 hover:text-pink-500"
+                ><i class="fa-brands fa-youtube"></i>
+              </a>
+              <a
+                href="https://spotify.com"
+                class="text-slate-950 hover:text-pink-500"
+                ><i class="fa-brands fa-spotify"></i
+              ></a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-2">
+      <h1
+        class="flex justify-start pt-12 pb-3 text-3xl text-slate-950 font-extrabold text-left tracking-tight md:text-4xl"
+      >
+        Details - Thrax Punks II - (2024)
+      </h1>
+      <div id="articles" class="flex flex-col pb-2 container mx-auto">
+        <!-- Article -->
+        <article class="w-full h-auto pt-0 pb-2">
+          <div class="flex flex-col lg:grid lg:grid-cols-2 lg:gap-4 pb-4">
+            <div class="col-span-1">
+              <iframe
+                class="col-span-1"
+                style="border: 0; width: 350px; height: 753px"
+                src="https://bandcamp.com/EmbeddedPlayer/album=2227469858/size=large/bgcol=ffffff/linkcol=f171a2/transparent=true/"
+                seamless
+                ><a href="https://thraxpunks.bandcamp.com/album/thrax-punks-ii"
+                  >Thrax Punks II von ΘΡΑΞ ΠΑΝΚC (Thrax Punks)</a
+                ></iframe
+              >
+            </div>
+
+            <div class="mt-12 col-span-1 lg:mt-0">
+              <h5 class="text-slate-900 text-slgm font-bold py-2">
+                Tracks Lyrics
+              </h5>
+
+              <div class="relative mb-3">
+                <h6 class="mb-0">
+                  <button
+                    class="relative flex items-center w-full p-4 font-semibold text-left transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                    data-collapse-target="animated-collapse-1"
+                  >
+                    <span>Agia Marini</span>
+                    <i
+                      class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"
+                    ></i>
+                  </button>
+                </h6>
+                <div
+                  data-collapse="animated-collapse-1"
+                  class="h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                >
+                  <div
+                    class="p-4 text-sm leading-normal text-blue-gray-500/80 space-y-4"
+                  >
+                    <p>
+                      Κάτω στην Αγιά Μαρίνη και στην Παναγιά Δώδεκα χρονών
+                      κοράσι πάει για καλογριά
+                    </p>
+
+                    <p>
+                      Μήτε τον σταυρό της κάνει, μήτε προσκυνά μπρος στα
+                      σταυροδρόμια στέκει και κρασί πουλά.
+                    </p>
+
+                    <p>
+                      Πέρασε κι ένας λεβέντης και την ερωτά Πόσο το κρασί, κυρά
+                      μου, πόσο η οκά;
+                    </p>
+
+                    <p>
+                      Πέντε φράγκα στους γερόντους, τζάμπα στα παιδιά Βάλε μιαν
+                      οκά, κυρά μου, βάλε μιαν οκά.
+                    </p>
+
+                    <p>
+                      Κι αν θα πιω και θα μεθύσω πού θα κοιμηθώ; Έλα μια βραδιά
+                      σε μένα, έλα μια βραδιά.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="relative mb-3">
+                <h6 class="mb-0">
+                  <button
+                    class="relative flex items-center w-full p-4 font-semibold text-left transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                    data-collapse-target="animated-collapse-2"
+                  >
+                    <span>Maskaras</span>
+                    <i
+                      class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"
+                    ></i>
+                  </button>
+                </h6>
+                <div
+                  data-collapse="animated-collapse-2"
+                  class="h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                >
+                  <div class="p-4 text-sm leading-normal text-blue-gray-500/80">
+                    <p>
+                      Στου χουριό την αποκριά βάφτσ’ άν' έναν μπουνταλά και τον
+                      έβγαλαν τσομπάνου στο μαντρί’ να κάν’ κουμάντο
+                    </p>
+                    <p>
+                      Στης ζωής το καρναβάλι πάντα φταίν όλοι οι άλλοι έχει
+                      μάσκες και για μας άμα θές να την περνάς
+                    </p>
+                    <p>
+                      Όλη μέρα στους καφέδες τσίπουρα και γκεζλεμέδες
+                      μπαϊλντούσαν χωριανοί μεσ ‘την κουπριά γιατί
+                    </p>
+                    <p>
+                      Στης ζωής το καρναβάλι πάντα φταίν όλοι οι άλλοι έχει
+                      μάσκες και για μας άμα θές να την περνάς
+                    </p>
+                    <p>
+                      Όλος κόσμος ξεσηκώθκει με τι αυτόναν αγριώθκει στα μπαϊρια
+                      ολοι πλαλουσαν να τον πιάσουν πολεμούσαν
+                    </p>
+                    <p>
+                      Χάλευαν να βρουν δε βρήκαν κι ύστερα τον σιχτιρίσαν άιντε
+                      πάλι αποκριά να βρουν μπέη φαφλατά
+                    </p>
+                    <p>
+                      Στης ζωής το καρναβάλι πάντα φταίν όλοι οι άλλοι έχει
+                      μάσκες και για μας άμα θές να την περνάς
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="relative mb-3">
+                <h6 class="mb-0">
+                  <button
+                    class="relative flex items-center w-full p-4 font-semibold text-left transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                    data-collapse-target="animated-collapse-3"
+                  >
+                    <span>Spyridoula</span>
+                    <i
+                      class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"
+                    ></i>
+                  </button>
+                </h6>
+                <div
+                  data-collapse="animated-collapse-3"
+                  class="h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                >
+                  <div class="p-4 text-sm leading-normal text-blue-gray-500/80">
+                    <p>
+                      Κορίτσι Εννιάμιση χρονώ, τη στέλνουν ψυχοκόρη Σ’ ένα
+                      ζευγάρι στον Πειραιά, που’ χει μια ακόμη κόρη Είπαν θα την
+                      ταΐζουνε και θα της κάνουν δώρα Όμως τη στρώσαν στη
+                      δουλειά από την πρώτη ώρα
+                    </p>
+                    <p>
+                      Δυο χρόνια τους καθάριζε, τους έκανε τα ψώνια Την ίδια
+                      ρόμπα φόραγε, με ήλιο και με χιόνια Κάθε που έκανε ζημιές,
+                      τη δέρναν με μανία Αυτός ήταν ο τρόπος τους, να βγουν απ’
+                      την ανία.
+                    </p>
+                    <p>
+                      Κορίτσι Δώδεκα χρονώ, δουλεύει υπηρέτρια Λεν’ πως τους
+                      λείπουνε λεφτά και πως αυτή είναι η φταίχτρα Κορίτσι
+                      δώδεκα χρονώ, μικρό παιδί, αθώο Το κλείνουν στο φωταγωγό,
+                      μέχρι να μοιάσει ζώο.
+                    </p>
+                    <p>
+                      Κορίτσι δώδεκα χρονώ, παρακαλάει να ζήσει Πες μας που
+                      είναι τα λεφτά, έχουμε κι άλλη λύση Τη γδύνουν και τη
+                      δένουνε, σε ξύλινο τραπέζι Βάζουν το σίδερο μπροστά, το
+                      ράδιο να παίζει
+                    </p>
+                    <p>
+                      Κορίτσι δώδεκα χρονώ, σε λένε Σπυριδούλα Σου στέρησαν τα
+                      νιάτα σου, σε στείλανε για δούλα Σου κάψαν τα παιχνίδια
+                      σου, σου κάψαν την καρδιά σου Παρακαλάω τους ζωντανούς, να
+                      σώσουν τα όνειρά σου.
+                    </p>
+                    <p>
+                      Κορίτσια δώδεκα χρονώ, παιδιά του κόσμου όλου Που σας
+                      βιάσαν την ψυχή, άνθρωποι του διαβόλου Πάρτε στα χέρια το
+                      σπαθί, βγάλτε φωνή, φωνάξτε Να δικαστούν οι ένοχοι και τα
+                      νερά ταράξτε Λευτερωθείτε απ’ τη σκλαβιά και τα νερά
+                      ταράξτε
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="relative mb-3">
+                <h6 class="mb-0">
+                  <button
+                    class="relative flex items-center w-full p-4 font-semibold text-left transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                    data-collapse-target="animated-collapse-4"
+                  >
+                    <span>Syrto Anasthenariko</span>
+                    <i
+                      class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"
+                    ></i>
+                  </button>
+                </h6>
+                <div
+                  data-collapse="animated-collapse-4"
+                  class="h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                >
+                  <div class="p-4 text-sm leading-normal text-blue-gray-500/80">
+                    <p>
+                      Κορίτσι Εννιάμιση χρονώ, τη στέλνουν ψυχοκόρη Σ’ ένα
+                      ζευγάρι στον Πειραιά, που’ χει μια ακόμη κόρη Είπαν θα την
+                      ταΐζουνε και θα της κάνουν δώρα Όμως τη στρώσαν στη
+                      δουλειά από την πρώτη ώρα
+                    </p>
+                    <p>
+                      Δυο χρόνια τους καθάριζε, τους έκανε τα ψώνια Την ίδια
+                      ρόμπα φόραγε, με ήλιο και με χιόνια Κάθε που έκανε ζημιές,
+                      τη δέρναν με μανία Αυτός ήταν ο τρόπος τους, να βγουν απ’
+                      την ανία.
+                    </p>
+                    <p>
+                      Κορίτσι Δώδεκα χρονώ, δουλεύει υπηρέτρια Λεν’ πως τους
+                      λείπουνε λεφτά και πως αυτή είναι η φταίχτρα Κορίτσι
+                      δώδεκα χρονώ, μικρό παιδί, αθώο Το κλείνουν στο φωταγωγό,
+                      μέχρι να μοιάσει ζώο.
+                    </p>
+                    <p>
+                      Κορίτσι δώδεκα χρονώ, παρακαλάει να ζήσει Πες μας που
+                      είναι τα λεφτά, έχουμε κι άλλη λύση Τη γδύνουν και τη
+                      δένουνε, σε ξύλινο τραπέζι Βάζουν το σίδερο μπροστά, το
+                      ράδιο να παίζει
+                    </p>
+                    <p>
+                      Κορίτσι δώδεκα χρονώ, σε λένε Σπυριδούλα Σου στέρησαν τα
+                      νιάτα σου, σε στείλανε για δούλα Σου κάψαν τα παιχνίδια
+                      σου, σου κάψαν την καρδιά σου Παρακαλάω τους ζωντανούς, να
+                      σώσουν τα όνειρά σου.
+                    </p>
+                    <p>
+                      Κορίτσια δώδεκα χρονώ, παιδιά του κόσμου όλου Που σας
+                      βιάσαν την ψυχή, άνθρωποι του διαβόλου Πάρτε στα χέρια το
+                      σπαθί, βγάλτε φωνή, φωνάξτε Να δικαστούν οι ένοχοι και τα
+                      νερά ταράξτε Λευτερωθείτε απ’ τη σκλαβιά και τα νερά
+                      ταράξτε
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="relative mb-3">
+                <h6 class="mb-0">
+                  <button
+                    class="relative flex items-center w-full p-4 font-semibold text-left transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                    data-collapse-target="animated-collapse-5"
+                  >
+                    <span>Miliso</span>
+                    <i
+                      class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"
+                    ></i>
+                  </button>
+                </h6>
+                <div
+                  data-collapse="animated-collapse-5"
+                  class="h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                >
+                  <div class="p-4 text-sm leading-normal text-blue-gray-500/80">
+                    <p>
+                      Μωρ’ Μηλίσω Μηλίσω μωρ’ Μηλίσω Μηλίσω, πως κοιμάσαι μοναχή
+                      πως κοιμάσαι μοναχή
+                    </p>
+                    <p>
+                      Δεν κοιμάμαι μοναχή δεν κοιμάμαι μοναχή, έχω άντρα
+                      γκαϊντατζή έχω άντρα γκαϊντατζή,
+                    </p>
+                    <p>
+                      έχω άντρα γκαϊντατζή έχω άντρα γκαϊντατζή, και μπασιάκου
+                      φιουρτζή και μπασιάκου φιουρτζή.
+                    </p>
+                    <p>
+                      Έχω δώδεκα αΪγουρί έχου δώδεκα αΪγουρί και με σένα
+                      δεκατρείς με τι σένα δεκατρείς
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="relative mb-3">
+                <h6 class="mb-0">
+                  <button
+                    class="relative flex items-center w-full p-4 font-semibold text-left transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                    data-collapse-target="animated-collapse-6"
+                  >
+                    <span>Agria Louloudia</span>
+                    <i
+                      class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"
+                    ></i>
+                  </button>
+                </h6>
+                <div
+                  data-collapse="animated-collapse-6"
+                  class="h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                >
+                  <div class="p-4 text-sm leading-normal text-blue-gray-500/80">
+                    <p>
+                      Μες της καρδιάς μου την αυλή, άγρια λουλούδια φυτρώνουν
+                      και με κοιτούν και με ρωτούν, ποιος είν ο δρόμος της χαράς
+                      και ποιος αυτός της λύπης κι απάντηση γυρεύουν και γω
+                      ψάχνω μια ανταπόκριση τόσο δα ειλικρινή
+                    </p>
+                    <p>
+                      Μες του μυαλού μου το οχυρό Φρουροί με εμποδίζουν Μην μπω
+                      και πάρω έλεγχο Μου λεν τι θες εσύ εδώ φύγε και μην
+                      ξανάρθεις όμως εγώ θα προσπαθώ Να έχω του μυαλού μου
+                      έλεγχο να έχω πνεύνα ζωηρό.
+                    </p>
+                    <p>
+                      έχω άντρα γκαϊντατζή έχω άντρα γκαϊντατζή, και μπασιάκου
+                      φιουρτζή και μπασιάκου φιουρτζή.
+                    </p>
+                    <p>
+                      Έχω δώδεκα αΪγουρί έχου δώδεκα αΪγουρί και με σένα
+                      δεκατρείς με τι σένα δεκατρείς
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="relative mb-3">
+                <h6 class="mb-0">
+                  <button
+                    class="relative flex items-center w-full p-4 font-semibold text-left transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                    data-collapse-target="animated-collapse-7"
+                  >
+                    <span>Ntrista</span>
+                    <i
+                      class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"
+                    ></i>
+                  </button>
+                </h6>
+                <div
+                  data-collapse="animated-collapse-7"
+                  class="h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                >
+                  <div class="p-4 text-sm leading-normal text-blue-gray-500/80">
+                    <p>
+                      Ανάθεμα τον που θα πει Τα αδέρφια δεν πονιούνται Μαύρα τα
+                      μάτια μου Τα αδέρφια δεν πονιούνται χελιδονάκι μου
+                    </p>
+                    <p>
+                      Τα αδέρφια σκίζουν τα βουνά Και δέντρα ξεριζώνουν Μαύρα τα
+                      μάτια μου Και δέντρα ξεριζώνουν Χελιδονάκι μου
+                    </p>
+                    <p>
+                      Δύο αδέρφια είχαν μια αδερφή Στον κόσμο ξακουσμένη Μαύρα
+                      τα μάτια μου Στον κόσμο ξακουσμένη Χελιδονάκι μου
+                    </p>
+                    <p>
+                      Την ζήλεψε ο Χάροντα Και θέλει να την πάρει Μαύρα τα μάτια
+                      μου Και θέλει να την πάρει Χελιδονάκι μου
+                    </p>
+                    <p>
+                      Να και τα αδέρφια έφτασαν Και γλύτωσαν την κόρη Μαύρα τα
+                      μάτια μου Και γλύτωσαν τη κόρη Χελιδονάκι μου
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="relative mb-3">
+                <h6 class="mb-0">
+                  <button
+                    class="relative flex items-center w-full p-4 font-semibold text-left transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                    data-collapse-target="animated-collapse-8"
+                  >
+                    <span>Vouno</span>
+                    <i
+                      class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"
+                    ></i>
+                  </button>
+                </h6>
+                <div
+                  data-collapse="animated-collapse-8"
+                  class="h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                >
+                  <div class="p-4 text-sm leading-normal text-blue-gray-500/80">
+                    <p>
+                      Παίρνω το χρυσοσκέπαρο και τ' αργυρόν πριόνι και τ'
+                      αργυρόν πριόνι Ν' ανέβω σε ψηλό βουνό και σ' όμορφο
+                      βαλκάνι και σ' όμορφο βαλκάνι
+                    </p>
+                    <p>
+                      Να κόψω δάφνες και μηλιές και μια νεραντζοπούλα και μια
+                      νεραντζοπούλα Να φτιάξω τη λυρίτσα μου και τ' αργυρόν
+                      δοξάρι και τ' αργυρόν δοξάρι
+                    </p>
+                    <p>
+                      Για να λαλώ πολύ καλά, χορεύουν τα κορίτσια χορεύουν τα
+                      κορίτσια Χορεύ' κι μέν' καλούδα μου, που θέλ' να με
+                      χωρίσει που θέλ' να με χωρίσει
+                    </p>
+                    <p>
+                      Στο τι κόρη μ' δε μ' άρεσες και θέλ'ς να με χωρίσεις και
+                      θέλ'ς να με χωρίσεις Γω είμαι πρώτος μάστορας και πρώτος ο
+                      δουλγέρης και πρώτος ο δουλγέρης
+                    </p>
+                    <p>
+                      Φτιάχνω τα σπίτια τα ψηλά, της Πόλης τ' αργαστήρια της
+                      Πόλης τ' αργαστήρια Φτιάχνω και την Αγια-Σοφιά και την
+                      Αγια-Μαρίνη και την Αγια-Μαρίνη
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="flex flex-row space-x-2 justify-start items-baseline mt-2 pt-4 pb-8 border-t-2"
+              >
+                <a
+                  href="https://thraxpunks.bandcamp.com/album/thrax-punks-ii"
+                  target="_blank"
+                  class="bg-slate-700 hover:bg-slate-900 text-white font-bold py-2 px-4 rounded-full text-sm"
+                  >Buy <i class="fa-solid fa-cart-shopping fa-sm"></i
+                ></a>
+
+                <a
+                  href="https://li.sten.to/lc7cgw1h"
+                  class="bg-slate-700 hover:bg-slate-900 text-white font-bold py-2 px-4 rounded-full text-sm"
+                  >Listen <i class="fa-solid fa-circle-play fa-sm"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col lg:grid lg:grid-cols-2 lg:gap-4 pb-4 mt-2">
+            <div class="col-span-1">
+              <h5 class="text-slate-900 text-slgm font-bold py-2">
+                Album Details
+              </h5>
+              <p class="text-gray-700 py-1 text-md">
+                ΘΡΑΞ ΠΑΝΚC II, Άνοιξη του 2025, Royal Alzheimer Hall Studio<br />
+
+                Βαϊτσης Χαρακοπίδης (Jr): Γκάιντα / Φωνή<br />
+                Γιώργος Σταυρίδης: Νταούλι / Φωνή<br />
+                Πάνος Γκίνης: Κιθάρες<br />
+                Μάρκος Κουτσιανάς: Ηχοληψία<br />
+                <br />
+                Σπυριδούλα - Στίχοι: Νεφέλη Μαϊστράλη
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <footer class="px-4 py-8 bg-slate-100">
+      <div
+        class="container mx-auto md:flex md:flex-row md:justify-between md:items-baseline"
+      >
+        <div class="md:flex flex-col items-start">
+          <div class="flex flex-col items-center justify-center md:flex-row">
+            <h3 class="text-md font-medium text-gray-700 tracking-tight">
+              Copyright © 2024 Thrax Punks
+            </h3>
+            <h3 class="text-md font-medium text-gray-700 tracking-tight">
+              -All Rights reserved.
+            </h3>
+          </div>
+          <!-- Social -->
+          <div
+            class="flex items-center justify-center space-x-5 text-md font-medium py-6 lg:text-xl lg:space-x-4 md:flex-row md:py-3"
+          >
+            <a
+              href="https://instagram.com"
+              class="text-gray-700 hover:text-pink-500"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://facebook.com"
+              class="text-gray-700 hover:text-pink-500"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://twitter.com"
+              class="text-gray-700 hover:text-pink-500"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              href="https://youtube.com"
+              class="text-gray-700 hover:text-pink-500"
+              ><i class="fa-brands fa-youtube"></i>
+            </a>
+            <a
+              href="https://spotify.com"
+              class="text-gray-700 hover:text-pink-500"
+              ><i class="fa-brands fa-spotify"></i
+            ></a>
+          </div>
+        </div>
+        <!-- footer nav links -->
+        <div class="flex flex-col items-center justify-between md:pt-6">
+          <div
+            class="flex-row items-center justify-between space-x-4 pt-3 md:pt-0"
+          >
+            <a
+              href="#"
+              class="pt-2 text-pink-500 hover:text-pink-400 hover:underline text-md font-medium"
+              >Privacy Policy</a
+            >
+
+            <a
+              href="#"
+              class="pt-2 text-pink-500 hover:text-pink-400 hover:underline text-md font-medium"
+              >Cookie Info</a
+            >
+            <a
+              href="#"
+              class="pt-2 text-pink-500 rounded-sm border-2 border-pink-500 px-5 py-2 hover:bg-pink-500 hover:text-white text-md font-medium"
+              >Press Kit</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/index.js"></script>
+    <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/collapse.js"></script>
+  </body>
+</html>

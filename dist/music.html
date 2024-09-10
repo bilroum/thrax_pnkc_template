@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./style.css" rel="stylesheet" />
+    <title>Document</title>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-montserrat">
+    <header
+      class="relative bg-white px-4 py-4 container mx-auto flex items-center justify-between"
+    >
+      <!-- Logo -->
+      <a href="./index.html">
+        <img
+          src="/src/img/THRAX PUNKS_4-01 (2).jpg"
+          alt="Thrax Punks Logo"
+          class="w-40 h-auto -ml-2"
+        />
+      </a>
+      <!-- Navigation -->
+      <nav
+        class="hidden lg:flex items-center justify-between container mx-auto"
+        aria-label="Global"
+      >
+        <!-- Navigation Items -->
+        <div
+          class="hidden md:flex items-center justify-center space-x-4 container mx-auto text-base tracking-tight font-bold"
+        >
+          <a
+            href="index.html"
+            class="leading-6 text-slate-950 hover:text-pink-500 focus-within:underline underline-offset-8"
+            >Home</a
+          >
+
+          <a
+            href="news.html"
+            class="leading-6 text-slate-950 hover:text-pink-500 focus-within:underline underline-offset-8"
+            >News</a
+          >
+          <a
+            href="shows.html"
+            class="leading-6 text-slate-950 hover:text-pink-500 focus-within:underline underline-offset-8"
+            >Shows</a
+          >
+
+          <a
+            href="https://thraxpunks.bandcamp.com/merch"
+            class="leading-6 text-slate-950 hover:text-pink-500 focus-within:underline underline-offset-8"
+            >Merch</a
+          >
+          <a
+            href="music.html"
+            class="leading-6 text-slate-950 hover:text-pink-500 focus-within:underline underline-offset-8"
+            >Music</a
+          >
+
+          <a
+            href="about.html"
+            class="leading-6 text-slate-950 hover:text-pink-500 focus-within:underline underline-offset-8"
+            >About</a
+          >
+          <a
+            href="contact.html"
+            class="leading-6 text-slate-950 hover:text-pink-500 focus-within:underline underline-offset-8"
+            >Contact</a
+          >
+        </div>
+        <!-- Social -->
+        <div
+          class="hidden md:flex md:flex-1 md:justify-end space-x-2 text-sm font-semibold xl:text-sm lg:space-x-4"
+        >
+          <a
+            href="https://instagram.com"
+            class="text-slate-950 hover:text-pink-500"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://facebook.com"
+            class="text-slate-950 hover:text-pink-500"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://twitter.com"
+            class="text-slate-950 hover:text-pink-500"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            href="https://youtube.com"
+            class="text-slate-950 hover:text-pink-500"
+            ><i class="fa-brands fa-youtube"></i>
+          </a>
+          <a
+            href="https://spotify.com"
+            class="text-slate-950 hover:text-pink-500"
+            ><i class="fa-brands fa-spotify"></i
+          ></a>
+        </div>
+      </nav>
+
+      <!-- Hamburger Icon -->
+      <button id="menu-btn" class="lg:hidden burger-icon">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
+
+      <!-- Mobile menu -->
+      <div
+        id="mobile-menu"
+        class="top-14 left-0 h-[calc(100vh-3.5rem)] w-screen lg:hidden z-50"
+      >
+        <nav
+          id="menu"
+          class="bg-slate-100 h-full w-full flex flex-col justify-center"
+        >
+          <!-- Nav items -->
+          <ul
+            class="px-6 py-3 container mx-auto flex flex-col items-start justify-center space-y-4"
+          >
+            <li class="text-slate-950 text-4xl font-bold">
+              <a href="index.html" class="hover:text-pink-500">Home</a>
+            </li>
+
+            <li class="">
+              <a
+                href="news.html"
+                class="text-slate-950 text-4xl font-bold hover:text-pink-500"
+                >News</a
+              >
+            </li>
+            <li class="">
+              <a
+                href="shows.html"
+                class="text-slate-950 text-4xl font-bold hover:text-pink-500"
+                >Shows</a
+              >
+            </li>
+            <li class="">
+              <a
+                href="https://thraxpunks.bandcamp.com/merch"
+                class="text-slate-950 text-4xl font-bold hover:text-pink-500"
+                >Merch</a
+              >
+            </li>
+            <li class="">
+              <a
+                href="music.html"
+                class="text-slate-950 text-4xl font-bold hover:text-pink-500"
+                >Music</a
+              >
+            </li>
+            <li class="">
+              <a
+                href="about.html"
+                class="text-slate-950 text-4xl font-bold hover:text-pink-500"
+                >About</a
+              >
+            </li>
+            <li class="">
+              <a
+                href="contact.html"
+                class="text-slate-950 text-4xl font-bold hover:text-pink-500"
+                >Contact</a
+              >
+            </li>
+          </ul>
+
+          <!-- Social -->
+          <div class="px-6 pt-10 container mx-auto">
+            <div
+              class="flex justify-start text-md font-bold pb-1 text-pink-400"
+            >
+              Follow us:
+            </div>
+            <div
+              class="flex flex-row items-center justify-start text-2xl space-x-6"
+            >
+              <a
+                href="https://instagram.com"
+                class="text-slate-950 hover:text-pink-500"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://facebook.com"
+                class="text-slate-950 hover:text-pink-500"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://twitter.com"
+                class="text-slate-950 hover:text-pink-500"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="https://youtube.com"
+                class="text-slate-950 hover:text-pink-500"
+                ><i class="fa-brands fa-youtube"></i>
+              </a>
+              <a
+                href="https://spotify.com"
+                class="text-slate-950 hover:text-pink-500"
+                ><i class="fa-brands fa-spotify"></i
+              ></a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-2">
+      <h1
+        class="flex justify-start pt-12 pb-3 text-3xl text-slate-950 font-extrabold text-center lg:text-left tracking-tight md:text-4xl lg:w-2/3"
+      >
+        Music
+      </h1>
+
+      <h4 class="text-lg font-extrabold text-slate-800 uppercase">Albums</h4>
+
+      <!-- Album -->
+      <div
+        class="flex flex-col pb-2 container mx-auto lg:grid lg:grid-cols-2 gap-12"
+      >
+        <article class="w-full h-auto pt-0 pb-2">
+          <a href="details-music.html" class="relative group">
+            <img
+              src="../src/img/thrx_pns2.jpg"
+              class="h-auto w-full object-cover"
+              alt=""
+            />
+            <div
+              class="absolute inset-0 bg-white opacity-0 group-hover:opacity-60 transition-opacity duration-200 z-10"
+            >
+              <h1
+                class="h-full w-full flex flex-row items-center justify-center text-gray-900 font-extrabold text-5xl"
+              >
+                Details
+              </h1>
+            </div>
+          </a>
+
+          <div class="pb-2 px-2 flex flex-col">
+            <h5 class="text-slate-600 text-sm font-normal py-2">
+              © 2024 Flying Donkeys - ℗ 2024 Flying Donkeys
+            </h5>
+            <a href="details-music.html"
+              ><h2
+                class="text-2xl font-bold tracking-tight leading-7 text-slate-800"
+              >
+                Thrax Punks - (2024)
+              </h2></a
+            >
+
+            <div
+              class="flex flex-row space-x-2 justify-start items-baseline mt-4"
+            >
+              <a
+                href="details-music.html"
+                class="bg-pink-700 hover:bg-pink-900 text-white font-semibold py-2 px-4 text-sm"
+              >
+                <i class="fa-solid fa-circle-info fa-sm mr-2"></i>Details</a
+              >
+
+              <a
+                href="https://li.sten.to/lc7cgw1h"
+                class="bg-slate-700 hover:bg-slate-900 text-white font-semibold py-2 px-4 text-sm"
+                ><i class="fa-solid fa-circle-play fa-sm font-thin mr-2"></i
+                >Listen</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <article class="w-full h-auto pt-0 pb-2">
+          <a href="#" class="relative group">
+            <img
+              src="../src/img/vakhes.jpg"
+              class="h-auto w-full object-cover"
+              alt=""
+            />
+            <div
+              class="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-200"
+            ></div>
+          </a>
+
+          <div class="pb-2 px-2 flex flex-col">
+            <h5 class="text-slate-600 text-sm font-normal py-2">
+              © 2024 Flying Donkeys - ℗ 2024 Flying Donkeys
+            </h5>
+            <a href="#"
+              ><h2
+                class="text-2xl font-bold tracking-tight leading-7 text-slate-800"
+              >
+                Vakhes (Βάκχες) - (2023)
+              </h2></a
+            >
+
+            <div
+              class="flex flex-row space-x-2 justify-start items-baseline mt-4"
+            >
+              <a
+                href="details-music.html"
+                class="bg-pink-400 hover:bg-pink-600 text-white font-semibold py-2 px-4 rounded-full text-sm"
+              >
+                <i class="fa-solid fa-circle-info fa-sm mr-2"></i>Details</a
+              >
+
+              <a
+                href="https://li.sten.to/lc7cgw1h"
+                class="bg-slate-700 hover:bg-slate-900 text-white font-semibold py-2 px-4 rounded-full text-sm"
+                ><i class="fa-solid fa-circle-play fa-sm font-thin mr-2"></i
+                >Listen</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <article class="w-full h-auto pt-0 pb-2">
+          <a href="#" class="relative group">
+            <img
+              src="../src/img/thrx_pns1.jpg"
+              class="h-auto w-full object-cover"
+              alt=""
+            />
+            <div
+              class="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-200"
+            ></div>
+          </a>
+
+          <div class="pb-2 px-2 flex flex-col">
+            <h5 class="text-slate-600 text-sm font-normal py-2">
+              © 2024 Flying Donkeys - ℗ 2024 Flying Donkeys
+            </h5>
+            <a href="#"
+              ><h2
+                class="text-2xl font-bold tracking-tight leading-7 text-slate-800"
+              >
+                Thrax Punks - (2019)
+              </h2></a
+            >
+
+            <div
+              class="flex flex-row space-x-6 justify-start items-baseline mt-4"
+            >
+              <a
+                href="details-music.html"
+                class="hover:text-white hover:bg-pink-600 text-pink-500 bg-slate-200 rounded-full px-4 font-semibold py-2 text-base"
+              >
+                <i class="fa-solid fa-circle-info fa-md mr-2"></i>Details</a
+              >
+
+              <a
+                href="https://li.sten.to/lc7cgw1h"
+                class="hover:text-slate-900 bg-pink-500 rounded-full px-4 text-slate-700 font-semibold py-2 text-base"
+                ><i class="fa-solid fa-circle-play fa-md font-thin mr-2"></i
+                >Listen</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <article class="w-full h-auto pt-0 pb-2">
+          <a href="#" class="relative group">
+            <img
+              src="../src/img/album16.jpg"
+              class="h-auto w-full object-cover"
+              alt=""
+            />
+            <div
+              class="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-200"
+            ></div>
+          </a>
+
+          <div class="pb-2 px-2 flex flex-col">
+            <h5 class="text-slate-600 text-sm font-normal py-2">
+              © 2024 Thrax Punks - ℗ 2024 Thrax Punks
+            </h5>
+            <a href="#"
+              ><h2
+                class="text-2xl font-bold tracking-tight leading-7 text-slate-800"
+              >
+                Pankopanigiropsychedelia (ΠΑΝΚΟΠΑΝΗΓΥΡΟΨΥΧΕΔΕΛΕΙΑ) - (2016)
+              </h2></a
+            >
+
+            <div class="flex flex-row space-x-4 justify-start items-baseline">
+              <a
+                href="\"
+                class="w-auto mt-2 text-pink-400 hover:text-pink-500 hover:underline underline-offset-4 text-base font-medium"
+                >Details &RightArrow;</a
+              >
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <footer class="px-4 py-8 bg-slate-100">
+      <div
+        class="container mx-auto md:flex md:flex-row md:justify-between md:items-baseline"
+      >
+        <div class="md:flex flex-col items-start">
+          <div class="flex flex-col items-center justify-center md:flex-row">
+            <h3 class="text-md font-medium text-gray-700 tracking-tight">
+              Copyright © 2024 Thrax Punks
+            </h3>
+            <h3 class="text-md font-medium text-gray-700 tracking-tight">
+              -All Rights reserved.
+            </h3>
+          </div>
+          <!-- Social -->
+          <div
+            class="flex items-center justify-center space-x-5 text-md font-medium py-6 lg:text-xl lg:space-x-4 md:flex-row md:py-3"
+          >
+            <a
+              href="https://instagram.com"
+              class="text-gray-700 hover:text-pink-500"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://facebook.com"
+              class="text-gray-700 hover:text-pink-500"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://twitter.com"
+              class="text-gray-700 hover:text-pink-500"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              href="https://youtube.com"
+              class="text-gray-700 hover:text-pink-500"
+              ><i class="fa-brands fa-youtube"></i>
+            </a>
+            <a
+              href="https://spotify.com"
+              class="text-gray-700 hover:text-pink-500"
+              ><i class="fa-brands fa-spotify"></i
+            ></a>
+          </div>
+        </div>
+        <!-- footer nav links -->
+        <div class="flex flex-col items-center justify-between md:pt-6">
+          <div
+            class="flex-row items-center justify-between space-x-4 pt-3 md:pt-0"
+          >
+            <a
+              href="#"
+              class="pt-2 text-pink-500 hover:text-pink-400 hover:underline text-md font-medium"
+              >Privacy Policy</a
+            >
+
+            <a
+              href="#"
+              class="pt-2 text-pink-500 hover:text-pink-400 hover:underline text-md font-medium"
+              >Cookie Info</a
+            >
+            <a
+              href="#"
+              class="pt-2 text-pink-500 rounded-sm border-2 border-pink-500 px-5 py-2 hover:bg-pink-500 hover:text-white text-md font-medium"
+              >Press Kit</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

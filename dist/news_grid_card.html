@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./style.css" rel="stylesheet" />
+    <title>Document</title>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header
+      class="relative bg-white px-4 py-4 container mx-auto flex items-center justify-between"
+    >
+      <!-- Logo -->
+      <a href="./index.html">
+        <img
+          src="/src/img/THRAX PUNKS_4-01 (2).jpg"
+          alt="Thrax Punks Logo"
+          class="w-40 h-auto -ml-2"
+        />
+      </a>
+      <!-- Navigation -->
+      <nav
+        class="hidden md:flex items-center justify-between container mx-auto"
+        aria-label="Global"
+      >
+        <!-- Navigation Items -->
+        <div
+          class="hidden md:flex items-center justify-center space-x-3 container mx-auto text-md font-semibold lg:text-xl"
+        >
+          <a href="#" class="leading-6 text-slate-950 hover:text-pink-500"
+            >Home</a
+          >
+
+          <a href="#" class="leading-6 text-slate-950 hover:text-pink-500"
+            >News</a
+          >
+          <a href="#" class="leading-6 text-slate-950 hover:text-pink-500"
+            >Shows</a
+          >
+
+          <a href="#" class="leading-6 text-slate-950 hover:text-pink-500"
+            >Merch</a
+          >
+          <a href="#" class="leading-6 text-slate-950 hover:text-pink-500"
+            >Merch</a
+          >
+          <a href="#" class="leading-6 text-slate-950 hover:text-pink-500"
+            >Contact</a
+          >
+        </div>
+        <!-- Social -->
+        <div
+          class="hidden md:flex md:flex-1 md:justify-end space-x-2 text-md font-semibold xl:text-xl lg:space-x-4"
+        >
+          <a
+            href="https://instagram.com"
+            class="text-slate-950 hover:text-pink-500"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://facebook.com"
+            class="text-slate-950 hover:text-pink-500"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://twitter.com"
+            class="text-slate-950 hover:text-pink-500"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            href="https://youtube.com"
+            class="text-slate-950 hover:text-pink-500"
+            ><i class="fa-brands fa-youtube"></i>
+          </a>
+          <a
+            href="https://spotify.com"
+            class="text-slate-950 hover:text-pink-500"
+            ><i class="fa-brands fa-spotify"></i
+          ></a>
+        </div>
+      </nav>
+
+      <!-- Hamburger Icon -->
+      <button id="menu-btn" class="md:hidden burger-icon">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
+
+      <!-- Mobile menu -->
+      <div
+        id="mobile-menu"
+        class="top-14 left-0 h-[calc(100vh-3.5rem)] w-screen md:hidden"
+      >
+        <nav
+          id="menu"
+          class="bg-slate-100 h-full w-full flex flex-col justify-center"
+        >
+          <!-- Nav items -->
+          <ul
+            class="px-6 py-6 container mx-auto flex flex-col items-start justify-center space-y-7"
+          >
+            <li class="space-y-1">
+              <a
+                href="#"
+                class="text-slate-950 font-bold text-4xl hover:text-pink-500"
+                >Home</a
+              >
+            </li>
+
+            <li class="space-y-1">
+              <a
+                href="#"
+                class="text-slate-950 font-bold text-4xl hover:text-pink-500"
+                >News</a
+              >
+            </li>
+            <li class="space-y-1">
+              <a
+                href="#"
+                class="text-slate-950 font-bold text-4xl hover:text-pink-500"
+                >Tour</a
+              >
+            </li>
+            <li class="space-y-1">
+              <a
+                href="#"
+                class="text-slate-950 font-bold text-4xl hover:text-pink-500"
+                >Music</a
+              >
+            </li>
+            <li class="space-y-1">
+              <a
+                href="#"
+                class="text-slate-950 font-bold text-4xl hover:text-pink-500"
+                >Contact</a
+              >
+            </li>
+          </ul>
+
+          <!-- Social -->
+          <div class="px-6 pt-10 container mx-auto">
+            <div
+              class="flex justify-start text-md font-extrabold pb-1 text-pink-400"
+            >
+              Follow us:
+            </div>
+            <div
+              class="flex flex-row items-center justify-start text-2xl space-x-6"
+            >
+              <a
+                href="https://instagram.com"
+                class="text-slate-950 hover:text-pink-500"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://facebook.com"
+                class="text-slate-950 hover:text-pink-500"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://twitter.com"
+                class="text-slate-950 hover:text-pink-500"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="https://youtube.com"
+                class="text-slate-950 hover:text-pink-500"
+                ><i class="fa-brands fa-youtube"></i>
+              </a>
+              <a
+                href="https://spotify.com"
+                class="text-slate-950 hover:text-pink-500"
+                ><i class="fa-brands fa-spotify"></i
+              ></a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-2">
+      <h1
+        class="p-4 text-3xl text-slate-950 font-extrabold text-center tracking-tight md:text-4xl"
+      >
+        News
+      </h1>
+      <div id="articles" class="flex flex-col pb-2">
+        <!-- Articles -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <article
+            id="card"
+            class="w-full h-auto pt-0 pb-2 xl:space-y-0 bg-slate-100"
+          >
+            <img
+              src="../src/img/DSCF0186.jpg"
+              class="h-56 w-full object-cover"
+              alt=""
+            />
+            <div class="pb-3 px-2 flex flex-col">
+              <h5 class="text-slate-600 font-medium py-2">
+                <time datetime="2023-08-05T00:00:00.000Z">Juli 30, 2024</time>
+              </h5>
+              <h2
+                class="text-2xl font-bold tracking-tight leading-7 py-2 text-slate-700 hover:text-pink-400"
+              >
+                Release of Tailwind Nextjs Starter Blog v2.0
+              </h2>
+              <p class="text-gray-700 py-1 text-lg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis aperiam officiis.
+              </p>
+
+              <a
+                href="#"
+                class="py-2 text-pink-500 hover:text-pink-400 hover:underline text-lg font-medium"
+                >Read More</a
+              >
+            </div>
+          </article>
+
+          <article
+            id="card"
+            class="w-full h-auto pt-0 pb-2 xl:space-y-0 bg-slate-100"
+          >
+            <img
+              src="../src/img/DSCF0186.jpg"
+              class="h-56 w-full object-cover"
+              alt=""
+            />
+            <div class="pb-3 px-2 flex flex-col">
+              <h5 class="text-slate-600 font-medium py-2">
+                <time datetime="2023-08-05T00:00:00.000Z">Juli 30, 2024</time>
+              </h5>
+              <h2
+                class="text-2xl font-bold tracking-tight leading-7 py-2 text-slate-700 hover:text-pink-400"
+              >
+                Release of Tailwind Nextjs Starter Blog v2.0
+              </h2>
+              <p class="text-gray-700 py-1 text-lg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis aperiam officiis.
+              </p>
+
+              <a
+                href="#"
+                class="py-2 text-pink-500 hover:text-pink-400 hover:underline text-lg font-medium"
+                >Read More</a
+              >
+            </div>
+          </article>
+
+          <article
+            id="card"
+            class="w-full h-auto pt-0 pb-2 xl:space-y-0 bg-slate-100"
+          >
+            <img
+              src="../src/img/DSCF0186.jpg"
+              class="h-56 w-full object-cover"
+              alt=""
+            />
+            <div class="pb-3 px-2 flex flex-col">
+              <h5 class="text-slate-600 font-medium py-2">
+                <time datetime="2023-08-05T00:00:00.000Z">Juli 30, 2024</time>
+              </h5>
+              <h2
+                class="text-2xl font-bold tracking-tight leading-7 py-2 text-slate-700 hover:text-pink-400"
+              >
+                Release of Tailwind Nextjs Starter Blog v2.0
+              </h2>
+              <p class="text-gray-700 py-1 text-lg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis aperiam officiis.
+              </p>
+
+              <a
+                href="#"
+                class="py-2 text-pink-500 hover:text-pink-400 hover:underline text-lg font-medium"
+                >Read More</a
+              >
+            </div>
+          </article>
+
+          <article
+            id="card"
+            class="w-full h-auto pt-0 pb-2 xl:space-y-0 bg-slate-100"
+          >
+            <img
+              src="../src/img/DSCF0186.jpg"
+              class="h-56 w-full object-cover"
+              alt=""
+            />
+            <div class="pb-3 px-2 flex flex-col">
+              <h5 class="text-slate-600 font-medium py-2">
+                <time datetime="2023-08-05T00:00:00.000Z">Juli 30, 2024</time>
+              </h5>
+              <h2
+                class="text-2xl font-bold tracking-tight leading-7 py-2 text-slate-700 hover:text-pink-400"
+              >
+                Release of Tailwind Nextjs Starter Blog v2.0
+              </h2>
+              <p class="text-gray-700 py-1 text-lg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis aperiam officiis.
+              </p>
+
+              <a
+                href="#"
+                class="py-2 text-pink-500 hover:text-pink-400 hover:underline text-lg font-medium"
+                >Read More</a
+              >
+            </div>
+          </article>
+
+          <article
+            id="card"
+            class="w-full h-auto pt-0 pb-2 xl:space-y-0 bg-slate-100"
+          >
+            <img
+              src="../src/img/DSCF0186.jpg"
+              class="h-56 w-full object-cover"
+              alt=""
+            />
+            <div class="pb-3 px-2 flex flex-col">
+              <h5 class="text-slate-600 font-medium py-2">
+                <time datetime="2023-08-05T00:00:00.000Z">Juli 30, 2024</time>
+              </h5>
+              <h2
+                class="text-2xl font-bold tracking-tight leading-7 py-2 text-slate-700 hover:text-pink-400"
+              >
+                Release of Tailwind Nextjs Starter Blog v2.0
+              </h2>
+              <p class="text-gray-700 py-1 text-lg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis aperiam officiis.
+              </p>
+
+              <a
+                href="#"
+                class="py-2 text-pink-500 hover:text-pink-400 hover:underline text-lg font-medium"
+                >Read More</a
+              >
+            </div>
+          </article>
+
+          <article
+            id="card"
+            class="w-full h-auto pt-0 pb-2 xl:space-y-0 bg-slate-100"
+          >
+            <img
+              src="../src/img/DSCF0186.jpg"
+              class="h-56 w-full object-cover"
+              alt=""
+            />
+            <div class="pb-3 px-2 flex flex-col">
+              <h5 class="text-slate-600 font-medium py-2">
+                <time datetime="2023-08-05T00:00:00.000Z">Juli 30, 2024</time>
+              </h5>
+              <h2
+                class="text-2xl font-bold tracking-tight leading-7 py-2 text-slate-700 hover:text-pink-400"
+              >
+                Release of Tailwind Nextjs Starter Blog v2.0
+              </h2>
+              <p class="text-gray-700 py-1 text-lg">
+                Lorem ipsum dolor sit amet consectetur adipisicing iciis.
+              </p>
+
+              <a
+                href="#"
+                class="py-2 text-pink-500 hover:text-pink-400 hover:underline text-lg font-medium"
+                >Read More</a
+              >
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- pagination -->
+
+      <div
+        id="pagination"
+        class="flex items-center justify-center space-x-8 pt-4 pb-12"
+      >
+        <span
+          class="text-gray-600 hover:pinkpy-3 text-medium text-lg font-medium hover:text-gray-700 hover:underline"
+          ><a href="#">Previous</a></span
+        >
+        <span
+          class="text-gray-600 hover:pinkpy-3 text-medium text-lg font-medium hover:text-gray-700 hover:underline"
+          ><a href="#">Next</a></span
+        >
+      </div>
+    </main>
+
+    <footer class="px-4 py-8 bg-slate-100">
+      <div
+        class="container mx-auto md:flex md:flex-row md:justify-between md:items-baseline"
+      >
+        <div class="md:flex flex-col items-start">
+          <div class="flex flex-col items-center justify-center md:flex-row">
+            <h3 class="text-md font-medium text-gray-700 tracking-tight">
+              Copyright © 2024 Thrax Punks
+            </h3>
+            <h3 class="text-md font-medium text-gray-700 tracking-tight">
+              -All Rights reserved.
+            </h3>
+          </div>
+          <!-- Social -->
+          <div
+            class="flex items-center justify-center space-x-5 text-md font-medium py-6 lg:text-xl lg:space-x-4 md:flex-row md:py-3"
+          >
+            <a
+              href="https://instagram.com"
+              class="text-gray-700 hover:text-pink-500"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://facebook.com"
+              class="text-gray-700 hover:text-pink-500"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://twitter.com"
+              class="text-gray-700 hover:text-pink-500"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              href="https://youtube.com"
+              class="text-gray-700 hover:text-pink-500"
+              ><i class="fa-brands fa-youtube"></i>
+            </a>
+            <a
+              href="https://spotify.com"
+              class="text-gray-700 hover:text-pink-500"
+              ><i class="fa-brands fa-spotify"></i
+            ></a>
+          </div>
+        </div>
+        <!-- footer nav links -->
+        <div class="flex flex-col items-center justify-between md:pt-6">
+          <div
+            class="flex-row items-center justify-between space-x-4 pt-3 md:pt-0"
+          >
+            <a
+              href="#"
+              class="pt-2 text-pink-500 hover:text-pink-400 hover:underline text-md font-medium"
+              >Privacy Policy</a
+            >
+
+            <a
+              href="#"
+              class="pt-2 text-pink-500 hover:text-pink-400 hover:underline text-md font-medium"
+              >Cookie Info</a
+            >
+            <a
+              href="#"
+              class="pt-2 text-pink-500 rounded-sm border-2 border-pink-500 px-5 py-2 hover:bg-pink-500 hover:text-white text-md font-medium"
+              >Press Kit</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

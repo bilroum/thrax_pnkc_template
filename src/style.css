@@ -1,0 +1,183 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#menu-btn {
+  z-index: 100;
+}
+
+.burger-icon {
+  display: inline-block;
+  cursor: pointer;
+  width: 30px;
+  height: 20px;
+  position: relative;
+}
+
+.burger-icon span {
+  display: block;
+  background-color: rgb(2 6 23);
+  height: 3px;
+  width: 100%;
+  border-radius: 2px;
+  position: absolute;
+  left: 0;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.burger-icon-frontpage span {
+  background-color: rgb(255, 255, 255);
+}
+
+.burger-icon span:nth-child(1) {
+  top: 0;
+}
+
+.burger-icon span:nth-child(2) {
+  top: 8px;
+}
+
+.burger-icon span:nth-child(3) {
+  bottom: 0;
+}
+
+.burger-icon.open span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+  background-color: rgb(236 72 153);
+}
+
+.burger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-icon.open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+#mobile-menu {
+  position: fixed;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transform: translateX(100%);
+  opacity: 0;
+  z-index: 50;
+}
+
+#mobile-menu.open {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.bit-widget-container {
+  font-family: "montserrat" !important;
+}
+
+.bit-upcoming-events {
+  margin: 0px 0px 50px 0px !important;
+}
+
+.bit-event:hover {
+  background-color: rgb(241 245 249) !important;
+}
+
+.bit-vertical-date-subsection {
+}
+.bit-venue-vertical {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.bit-location-under-tablet {
+  font-size: 18px;
+  font-weight: 700;
+  color: rgb(40, 43, 56) !important;
+}
+
+.bg-front {
+  z-index: 0;
+  position: relative;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 40px;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  min-width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.carousel-prev,
+.carousel-next {
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.carousel-prev {
+  left: 80px;
+}
+
+.carousel-next {
+  left: 120px;
+}
+
+.carousel-prev:hover,
+.carousel-next:hover {
+  background-color: rgba(235, 77, 193, 0.8);
+}
+
+.carousel-indicator {
+  transition: background-color 0.3s ease;
+}
+
+.carousel-indicator.active {
+  background-color: #f472b6; /* Or your active indicator color */
+}
+
+/* Spinner styles */
+.spinner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8); /* Light background */
+  z-index: 9999; /* Ensure it's above all other content */
+}
+
+.spinner-inner {
+  border: 8px solid #f3f3f3; /* Light grey */
+  border-top: 8px solid rgb(219 39 119); /* Blue */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Initially hide content */
+.hidden {
+  display: none;
+}

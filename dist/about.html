@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./style.css" rel="stylesheet" />
+    <title>Document</title>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-montserrat">
+    <header
+      class="relative bg-white px-4 py-4 container mx-auto flex items-center justify-between"
+    >
+      <!-- Logo -->
+      <a href="./index.html">
+        <img
+          src="/src/img/THRAX PUNKS_4-01 (2).jpg"
+          alt="Thrax Punks Logo"
+          class="w-40 h-auto -ml-2"
+        />
+      </a>
+      <!-- Navigation -->
+      <nav
+        class="hidden lg:flex items-center justify-between container mx-auto"
+        aria-label="Global"
+      >
+        <!-- Navigation Items -->
+        <div
+          class="hidden md:flex items-center justify-center space-x-4 container mx-auto text-base tracking-tight font-bold"
+        >
+          <a
+            href="index.html"
+            class="leading-6 text-slate-950 hover:text-pink-500 focus-within:underline underline-offset-8"
+            >Home</a
+          >
+
+          <a
+            href="news.html"
+            class="leading-6 text-slate-950 hover:text-pink-500 focus-within:underline underline-offset-8"
+            >News</a
+          >
+          <a
+            href="shows.html"
+            class="leading-6 text-slate-950 hover:text-pink-500 focus-within:underline underline-offset-8"
+            >Shows</a
+          >
+
+          <a
+            href="https://thraxpunks.bandcamp.com/merch"
+            class="leading-6 text-slate-950 hover:text-pink-500 focus-within:underline underline-offset-8"
+            >Merch</a
+          >
+          <a
+            href="music.html"
+            class="leading-6 text-slate-950 hover:text-pink-500 focus-within:underline underline-offset-8"
+            >Music</a
+          >
+
+          <a
+            href="about.html"
+            class="leading-6 text-slate-950 hover:text-pink-500 focus-within:underline underline-offset-8"
+            >About</a
+          >
+          <a
+            href="contact.html"
+            class="leading-6 text-slate-950 hover:text-pink-500 focus-within:underline underline-offset-8"
+            >Contact</a
+          >
+        </div>
+        <!-- Social -->
+        <div
+          class="hidden md:flex md:flex-1 md:justify-end space-x-2 text-sm font-semibold xl:text-sm lg:space-x-4"
+        >
+          <a
+            href="https://instagram.com"
+            class="text-slate-950 hover:text-pink-500"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://facebook.com"
+            class="text-slate-950 hover:text-pink-500"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://twitter.com"
+            class="text-slate-950 hover:text-pink-500"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            href="https://youtube.com"
+            class="text-slate-950 hover:text-pink-500"
+            ><i class="fa-brands fa-youtube"></i>
+          </a>
+          <a
+            href="https://spotify.com"
+            class="text-slate-950 hover:text-pink-500"
+            ><i class="fa-brands fa-spotify"></i
+          ></a>
+        </div>
+      </nav>
+
+      <!-- Hamburger Icon -->
+      <button id="menu-btn" class="lg:hidden burger-icon">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
+
+      <!-- Mobile menu -->
+      <div
+        id="mobile-menu"
+        class="top-14 left-0 h-[calc(100vh-3.5rem)] w-screen lg:hidden z-50"
+      >
+        <nav
+          id="menu"
+          class="bg-slate-100 h-full w-full flex flex-col justify-center"
+        >
+          <!-- Nav items -->
+          <ul
+            class="px-6 py-3 container mx-auto flex flex-col items-start justify-center space-y-4"
+          >
+            <li class="text-slate-950 text-4xl font-bold">
+              <a href="index.html" class="hover:text-pink-500">Home</a>
+            </li>
+
+            <li class="">
+              <a
+                href="news.html"
+                class="text-slate-950 text-4xl font-bold hover:text-pink-500"
+                >News</a
+              >
+            </li>
+            <li class="">
+              <a
+                href="shows.html"
+                class="text-slate-950 text-4xl font-bold hover:text-pink-500"
+                >Shows</a
+              >
+            </li>
+            <li class="">
+              <a
+                href="https://thraxpunks.bandcamp.com/merch"
+                class="text-slate-950 text-4xl font-bold hover:text-pink-500"
+                >Merch</a
+              >
+            </li>
+            <li class="">
+              <a
+                href="music.html"
+                class="text-slate-950 text-4xl font-bold hover:text-pink-500"
+                >Music</a
+              >
+            </li>
+            <li class="">
+              <a
+                href="about.html"
+                class="text-slate-950 text-4xl font-bold hover:text-pink-500"
+                >About</a
+              >
+            </li>
+            <li class="">
+              <a
+                href="contact.html"
+                class="text-slate-950 text-4xl font-bold hover:text-pink-500"
+                >Contact</a
+              >
+            </li>
+          </ul>
+
+          <!-- Social -->
+          <div class="px-6 pt-10 container mx-auto">
+            <div
+              class="flex justify-start text-md font-bold pb-1 text-pink-400"
+            >
+              Follow us:
+            </div>
+            <div
+              class="flex flex-row items-center justify-start text-2xl space-x-6"
+            >
+              <a
+                href="https://instagram.com"
+                class="text-slate-950 hover:text-pink-500"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://facebook.com"
+                class="text-slate-950 hover:text-pink-500"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://twitter.com"
+                class="text-slate-950 hover:text-pink-500"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="https://youtube.com"
+                class="text-slate-950 hover:text-pink-500"
+                ><i class="fa-brands fa-youtube"></i>
+              </a>
+              <a
+                href="https://spotify.com"
+                class="text-slate-950 hover:text-pink-500"
+                ><i class="fa-brands fa-spotify"></i
+              ></a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-2">
+      <h1
+        class="flex justify-start pt-12 pb-3 text-3xl text-slate-950 font-extrabold text-center lg:text-left tracking-tight md:text-4xl lg:w-2/3"
+      >
+        About
+      </h1>
+
+      <div id="articles" class="flex flex-col pb-2 container mx-auto">
+        <!-- Article -->
+        <article class="w-full h-auto pt-0 pb-2">
+          <img
+            src="../src/img/Anastasia_Zisopoulou-SocialWaste-7303124.jpg"
+            class="h-96 w-full object-cover object-center"
+            alt=""
+          />
+          <div id="text_about" class="pb-3 px-2 flex flex-col">
+            <p class="text-gray-700 py-4 text-lg">
+              <span class="text-pink-500">Thrax Punks</span> started playing
+              music from 2008 when George Stavridis and
+              <span class="text-pink-500">Vaitsis Charakopidis</span> met each
+              other after they played in gigs, such as weddings, traditional
+              festivals and customs, many music festivals, even in protests on
+              the road! Living on the era of actually “no genre” and influenced
+              by many styles of music with the Greek underground punk scene to
+              be the key to their relationship back then, they continued to
+              adopt several elements on their music. In the autumn of 2015 they
+              met <span class="text-pink-500">Panos Gkinis</span> during a
+              jamming concert, where he joined the band. After they played
+              together in many gigs around Greece, they decided to record their
+              first live demo album called “ΠΑΝΚΟΠΑΝΗΓΥΡΟΨΥΧΕΔΕΛΕΙΑ” (punk mixed
+              with fete Thracian party music and psychedelic music).
+            </p>
+          </div>
+
+          <h1
+            class="flex justify-start mt-12 pb-3 text-3xl text-slate-950 font-extrabold text-center tracking-tight"
+          >
+            Our Members
+          </h1>
+          <div
+            id="members"
+            class="grid grid-cols-1 justify-items-center space-y-3 md:grid-cols-3 md:grid-flow-row md:space-y-0 mb-8 md:gap-4"
+          >
+            <div class="flex flex-col items-center">
+              <img
+                src="../src/img/giorgos.jpg"
+                class="h-52 w-52 object-cover rounded-full"
+                alt=""
+              />
+              <div class="pb-3 flex flex-col items-center">
+                <h3 class="font-bold text-pink-500 text-xl tracking-tight">
+                  George Stavridis
+                </h3>
+                <p class="text-gray-700 py-1 text-md tracking-tight">
+                  Davul, Thracian Lyre, Vocals
+                </p>
+              </div>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <img
+                src="../src/img/jr.jpg"
+                class="h-52 w-52 object-cover rounded-full"
+                alt=""
+              />
+              <div class="pb-3 flex flex-col items-center">
+                <h3 class="font-bold text-pink-500 text-xl tracking-tight">
+                  Vaitsis Charakopidis
+                </h3>
+                <p class="text-gray-700 py-1 text-md tracking-tight">
+                  Gaida, Kaval, Zurna, Vocals
+                </p>
+              </div>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <img
+                src="../src/img/panos.jpg"
+                class="h-52 w-52 object-cover rounded-full"
+                alt=""
+              />
+              <div class="pb-3 flex flex-col items-center">
+                <h3 class="font-bold text-pink-500 text-xl tracking-tight">
+                  Panos Gkinis
+                </h3>
+                <p class="text-gray-700 py-1 text-md tracking-tight">
+                  Electric Guitars
+                </p>
+              </div>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <img
+                src="../src/img/DSCF0186.jpg"
+                class="h-52 w-52 object-cover rounded-full"
+                alt=""
+              />
+              <div class="pb-3 flex flex-col items-center">
+                <h3 class="font-bold text-pink-500 text-xl tracking-tight">
+                  Panos Gkinis
+                </h3>
+                <p class="text-gray-700 py-1 text-md tracking-tight">
+                  Sound Engineer
+                </p>
+              </div>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <img
+                src="../src/img/DSCF0186.jpg"
+                class="h-52 w-52 object-cover rounded-full"
+                alt=""
+              />
+              <div class="pb-3 flex flex-col items-center">
+                <h3 class="font-bold text-pink-500 text-xl tracking-tight">
+                  Panos Gkinis
+                </h3>
+                <p class="text-gray-700 py-1 text-md tracking-tight">
+                  Light Engineer, Manager
+                </p>
+              </div>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <img
+                src="../src/img/logo_black.jpg"
+                class="h-52 w-52 object-cover rounded-full"
+                alt=""
+              />
+              <div class="pb-3 flex flex-col items-center">
+                <h3 class="font-bold text-pink-500 text-xl tracking-tight">
+                  Friends
+                </h3>
+                <p class="text-gray-700 py-1 text-md tracking-tight">
+                  Friends and maybe you?
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <footer class="px-4 py-8 bg-slate-100">
+      <div
+        class="container mx-auto md:flex md:flex-row md:justify-between md:items-baseline"
+      >
+        <div class="md:flex flex-col items-start">
+          <div class="flex flex-col items-center justify-center md:flex-row">
+            <h3 class="text-md font-medium text-gray-700 tracking-tight">
+              Copyright © 2024 Thrax Punks
+            </h3>
+            <h3 class="text-md font-medium text-gray-700 tracking-tight">
+              -All Rights reserved.
+            </h3>
+          </div>
+          <!-- Social -->
+          <div
+            class="flex items-center justify-center space-x-5 text-md font-medium py-6 lg:text-xl lg:space-x-4 md:flex-row md:py-3"
+          >
+            <a
+              href="https://instagram.com"
+              class="text-gray-700 hover:text-pink-500"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://facebook.com"
+              class="text-gray-700 hover:text-pink-500"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://twitter.com"
+              class="text-gray-700 hover:text-pink-500"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              href="https://youtube.com"
+              class="text-gray-700 hover:text-pink-500"
+              ><i class="fa-brands fa-youtube"></i>
+            </a>
+            <a
+              href="https://spotify.com"
+              class="text-gray-700 hover:text-pink-500"
+              ><i class="fa-brands fa-spotify"></i
+            ></a>
+          </div>
+        </div>
+        <!-- footer nav links -->
+        <div class="flex flex-col items-center justify-between md:pt-6">
+          <div
+            class="flex-row items-center justify-between space-x-4 pt-3 md:pt-0"
+          >
+            <a
+              href="#"
+              class="pt-2 text-pink-500 hover:text-pink-400 hover:underline text-md font-medium"
+              >Privacy Policy</a
+            >
+
+            <a
+              href="#"
+              class="pt-2 text-pink-500 hover:text-pink-400 hover:underline text-md font-medium"
+              >Cookie Info</a
+            >
+            <a
+              href="#"
+              class="pt-2 text-pink-500 rounded-sm border-2 border-pink-500 px-5 py-2 hover:bg-pink-500 hover:text-white text-md font-medium"
+              >Press Kit</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
