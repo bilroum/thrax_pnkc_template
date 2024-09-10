@@ -1,2 +1,2 @@
-# thrax_pnkc_template_git
+# thrax_pnkc_template
 Template made with tailwind, js, css
