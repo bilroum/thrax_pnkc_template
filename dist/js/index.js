@@ -8,10 +8,12 @@ window.addEventListener("load", () => {
   }, 2000); // 2000ms = 2 seconds
 });
 
+const body = document.body;
 // JavaScript to toggle the open class
 document.querySelector(".burger-icon").addEventListener("click", function () {
   this.classList.toggle("open");
   document.querySelector("#mobile-menu").classList.toggle("open");
+  body.classList.toggle("no-scroll");
 });
 
 //Hero section with arows and indicators
